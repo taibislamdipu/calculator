@@ -3,8 +3,21 @@
 
 }
 
-button{
+.btn{
+    font-weight: bold;
+    font-size: 20px;
     width: 70px;
     height: 70px;
-    margin: 2px 1px;
+    margin: 3px 0px;
+  }
+
+.btn-equal{
+    background-color: rgb(236, 119, 99);
 }
+.btn-equal:hover{
+    background-color: tomato;
+}
+
+
+
+
