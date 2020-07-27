@@ -1,22 +1,38 @@
-.calculator-area{
-    margin: 100px;
 
+body {
+    text-align: center;
+    margin-top: 100px;
+    background-image: linear-gradient(to right, #07f8c3 0%, #4289ff 100%);
+    
+}
+
+header{
+    margin-bottom: 30px;
+}
+
+#display{
+    background-color: lightgray;
+    width: 350px;
+    height: 80px;
+    padding: 5px;
+    font-size: 45px;
 }
 
 .btn{
     font-weight: bold;
     font-size: 20px;
-    width: 70px;
+    width: 84px;
     height: 70px;
     margin: 3px 0px;
   }
 
-.btn-equal{
+.btn-red{
     background-color: rgb(236, 119, 99);
 }
-.btn-equal:hover{
+.btn-red:hover{
     background-color: tomato;
 }
+
 
 
 

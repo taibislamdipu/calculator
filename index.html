@@ -8,44 +8,54 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Javascript Calculator</title>
+    <title>Basic Calculator</title>
 </head>
 
 <body>
-    <main>
-        <section class="calculator-area">
-            <div>
-                <h3>0</h3>
-            </div>
-            <div class="btn-keypad">
-                <button class="btn btn-secondary">AC</button>
-                <button class="btn btn-secondary">
-                    < </button>
-                        <button class="btn btn-secondary">%</button>
-                        <button class="btn btn-secondary">/</button>
-                        <br>
-                        <button class="btn btn-secondary">7</button>
-                        <button class="btn btn-secondary">8</button>
-                        <button class="btn btn-secondary">9</button>
-                        <button class="btn btn-secondary">x</button>
-                        <br>
-                        <button class="btn btn-secondary">4</button>
-                        <button class="btn btn-secondary">5</button>
-                        <button class="btn btn-secondary">6</button>
-                        <button class="btn btn-secondary">-</button>
-                        <br>
-                        <button class="btn btn-secondary">1</button>
-                        <button class="btn btn-secondary">2</button>
-                        <button class="btn btn-secondary">3</button>
-                        <button class="btn btn-secondary">+</button>
-                        <br>
-                        <button class="btn btn-secondary "></button>
-                        <button class="btn btn-secondary ">0</button>
-                        <button class="btn btn-secondary ">.</button>
-                        <button id="equal" class="btn btn-secondary btn-equal">=</button>
-            </div>
-        </section>
-    </main>
+    <header>
+        <h3 class="text-dark">JavaScript Basic Calculator</h3>
+    </header>
+
+    <section class="container">
+
+        <!-- Calculator Display -->
+        <div>
+            <input id="display" disabled>
+        </div>
+
+        <!-- Calculator Buttons -->
+        <div>
+            <button type="button" class="btn btn-secondary btn-red" onclick="clearAll()">AC</button>
+            <button type="button" class="btn btn-secondary" onclick="alert('This function not work!')" value="c"> C
+            </button>
+            <button type="button" class="btn btn-secondary" onclick="insert('%'), egeCase()"> % </button>
+            <button type="button" class="btn btn-secondary" onclick="insert('/'), egeCase()"> / </button>
+            <br>
+            <button type="button" class="btn btn-secondary" onclick="insert(7)" value="7">7</button>
+            <button type="button" class="btn btn-secondary" onclick="insert(8)" value="8">8</button>
+            <button type="button" class="btn btn-secondary" onclick="insert(9)" value="9">9</button>
+            <button type="button" class="btn btn-secondary" onclick="insert('*'), egeCase()"> X </button>
+            <br>
+            <button type="button" class="btn btn-secondary" onclick="insert(4)" value="4">4</button>
+            <button type="button" class="btn btn-secondary" onclick="insert(5)" value="5">5</button>
+            <button type="button" class="btn btn-secondary" onclick="insert(6)" value="6">6</button>
+            <button type="button" class="btn btn-secondary" onclick="insert('-') , egeCase()"> - </button>
+            <br>
+            <button type="button" class="btn btn-secondary" onclick="insert(1)" value="1">1</button>
+            <button type="button" class="btn btn-secondary" onclick="insert(2)" value="2">2</button>
+            <button type="button" class="btn btn-secondary" onclick="insert(3)" value="3">3</button>
+            <button type="button" class="btn btn-secondary" onclick="insert('+'), egeCase()"> + </button>
+            <br>
+            <button type="button" class="btn btn-secondary" onclick="insert()" value="" disabled> </button>
+            <button type="button" class="btn btn-secondary" onclick="insert(0)" value="0">0</button>
+            <button type="button" class="btn btn-secondary" onclick="insert('.')" value="."> . </button>
+            <button type="button" class="btn btn-secondary btn-red" onclick="calculate(), egeCase()"> = </button>
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>
