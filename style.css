@@ -1,0 +1,10 @@
+.calculator-area{
+    margin: 100px;
+
+}
+
+button{
+    width: 70px;
+    height: 70px;
+    margin: 2px 1px;
+}
