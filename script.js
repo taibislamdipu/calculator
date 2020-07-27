@@ -23,3 +23,9 @@ function calculate() {
 function clearAll() {
     document.getElementById('display').value = "";
 }
+
+function backspace() {
+    var num = document.getElementById('display').value;
+    num = num.substring(0, num.length - 1);
+    document.getElementById('display').value = num;
+}
